@@ -1,6 +1,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: url("./images/digital-education.webp");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .container {
