@@ -52,9 +52,14 @@ function sendMessage(event) {
                     chatMsg.innerHTML += "<div class='align-items-start d-flex'><img src='./images/chatbot-img.png' width='50px'><div class='bot-message d-inline-block'>Alhamdullilah</div></div>";
                     scrollToBottom();
                 }, 2000);
+            } else if (['thank you', 'thanks', 'thanx', 'ok'].indexOf(message.toLowerCase()) !== -1) {
+                    setTimeout(function () {
+                        chatMsg.innerHTML += "<div class='align-items-start d-flex'><img src='./images/chatbot-img.png' width='50px'><div class='bot-message d-inline-block'>Your most welcome <3</div></div>";
+                        scrollToBottom();
+                    }, 2000);
             } else if (['courses', 'course', 'it course', 'it courses'].indexOf(message.toLowerCase()) !== -1) {
                   setTimeout(function () {
-                      chatMsg.innerHTML += `<div class="container mt-4">
+                      chatMsg.innerHTML += `<div class="container my-2">
                       <div class="row row-cols-1 row-cols-md-2 g-4">
                           <div class="col-md-6 col-12 px-1">
                               <div class="card card-horizontal">
@@ -103,7 +108,7 @@ function sendMessage(event) {
             } else if (['web & app course','web & app', 'web and app', 'website', '& application', 'and application', 'website & application', 'website and application', 'web app', 'web', 'app'].indexOf(message.toLowerCase()) !== -1) {
                 setTimeout(function () {
                     chatMsg.innerHTML += 
-                    `<div class='align-items-start d-flex'><img src='./images/chatbot-img.png' width='50px'>
+                    `<div class='align-items-start d-flex my-2'><img src='./images/chatbot-img.png' width='50px'>
                     <div class='bot-message d-inline-block'>Yes, we offer a Web and App course. Please stay connected with our <a href="https://www.facebook.com/saylani.smit/" class="btn btn-primary">Saylani Facebook page</a> for application details.
                     <p>Modules Offered:</p>
                     <ul>
@@ -130,7 +135,7 @@ function sendMessage(event) {
             } else if (['designing course','designing', 'designer', 'ui ux', 'ui', 'ux', 'ui/ux', 'ui / ux'].indexOf(message.toLowerCase()) !== -1) {
                 setTimeout(function () {
                     chatMsg.innerHTML += 
-                    `<div class='align-items-start d-flex'><img src='./images/chatbot-img.png' width='50px'>
+                    `<div class='align-items-start d-flex my-2'><img src='./images/chatbot-img.png' width='50px'>
                     <div class='bot-message d-inline-block'>Yes, we offer a comprehensive Web and App course focusing on UI/UX design. Please stay connected with our <a href="https://www.facebook.com/saylani.smit/" class="btn btn-primary">Saylani Facebook page</a> for application details and updates.
                     <p>UI/UX Design Course Modules:</p>
                     <ul>
@@ -161,7 +166,7 @@ function sendMessage(event) {
             } else if (['web 3.0 course','web 3.0', 'web 3.0 course', 'meta verse', 'blockchain'].indexOf(message.toLowerCase()) !== -1) {
                 setTimeout(function () {
                     chatMsg.innerHTML += 
-                    `<div class='align-items-start d-flex'><img src='./images/chatbot-img.png' width='50px'>
+                    `<div class='align-items-start d-flex my-2'><img src='./images/chatbot-img.png' width='50px'>
                     <div class='bot-message d-inline-block'>Yes, we offer a comprehensive Web 3.0 course. Please stay connected with our <a href="https://www.facebook.com/saylani.smit/" class="btn btn-primary">Saylani Facebook page</a> for application details and updates.
                     <p>Web 3.0 Course Modules:</p>
                     <ul>
@@ -192,7 +197,7 @@ function sendMessage(event) {
             } else if (['ai courses', 'ai course', 'ai', 'artificial intelligence'].indexOf(message.toLowerCase()) !== -1) {
                 setTimeout(function () {
                     chatMsg.innerHTML += 
-                    `<div class='align-items-start d-flex'><img src='./images/chatbot-img.png' width='50px'>
+                    `<div class='align-items-start d-flex my-2'><img src='./images/chatbot-img.png' width='50px'>
                     <div class='bot-message d-inline-block'>Yes, we offer a comprehensive Artificial Intelligence (AI) course. Please stay connected with our <a href="https://www.facebook.com/saylani.smit/" class="btn btn-primary">Saylani Facebook page</a> for application details and updates.
                     <p>Artificial Intelligence (AI) Course Modules:</p>
                     <ul>
